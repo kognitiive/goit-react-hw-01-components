@@ -2,8 +2,10 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://goitacademy.github.io/react-homework-template/",
+  "homepage": "https://kognitiive.github.io/goit-react-hw-01-components/",
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -23,6 +25,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "plugins": [
+      "@emotion"
     ]
   },
   "browserslist": {
@@ -36,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.10.0",
+    "eslint": "^8.23.0",
+    "prettier": "2.7.1",
+    "prop-types": "^15.8.1"
   }
 }
