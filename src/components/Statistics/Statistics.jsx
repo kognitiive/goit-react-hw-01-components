@@ -1,10 +1,10 @@
 import { StatsList, Wrapper } from './Statistics.styled';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
   return (
     <Wrapper>
-      <h2>{title}</h2>
-
+      {title && <h2>{title}</h2>}
       <StatsList>
         {stats.map(({ label, percentage, id }) => (
           <li key={id}>
@@ -15,6 +15,17 @@ const Statistics = ({ title, stats }) => {
       </StatsList>
     </Wrapper>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };
 
 export default Statistics;

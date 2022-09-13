@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   width: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   padding: 10px 0 0 0;
   text-align: center;
   background-color: #0e6bc2;
