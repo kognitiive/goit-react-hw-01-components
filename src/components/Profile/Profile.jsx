@@ -30,13 +30,14 @@ const Profile = ({ avatar, username, tag, location, stats }) => {
 };
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
   stats: PropTypes.shape({
-    label: PropTypes.string,
-    quantity: PropTypes.number,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
 
